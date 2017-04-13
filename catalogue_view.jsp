@@ -33,6 +33,7 @@
                 <td><%= category.getCategory() %></td>
                 <td><a href="<%= application.getContextPath() %>/Controller?action=edititem&itmCode=<%= itmCode %>">Edit</a></td>
                 <td><a href="<%=application.getContextPath() %>/Controller?action=remove&itmCode=<%= itmCode %>">Remove</a></td>
+				<td><a href="<%=application.getContextPath() %>/Controller?action=remove&itmCode=<%= itmCode %>">add to cart</a></td>
             </tr>                
             <%}
         }catch(NullPointerException e){
